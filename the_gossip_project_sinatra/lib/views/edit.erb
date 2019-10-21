@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Edit Gossip</title>
+  </head>
+  <body>
+    <h1>Change le gossip ☠︎ </h1>
+
+    <p>Modifie le gossip <% @id %> via le formulaire ci-dessous</p>
+
+    <form action='/gossips/edit/' method='POST'>
+
+      <% gossips.each do |gossip| %>
+      Change  le nom :  <input type='text' name='gossip_author' value="<% gossip_author %>"/><br/>
+      Balance ton potin : <input type='text' name='gossip_content' value="<% gossip_content %>"/><br/>
+      <%end%>
+      <input type='submit'/>
+    </form>
+  </body>
+</html>

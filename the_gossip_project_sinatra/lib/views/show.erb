@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title> Gossip  <%= @id %> </title>
+	</head>
+	<body>
+		<section>
+			<center>
+        	<p> Voici le potin n° <%= @id %> </p>
+        	<p>	Son auteur : <%= Gossip.find(@id)[0] %> </p>
+        		Le contenu du potin : <%= Gossip.find(@id)[1] %>
+        		
+      	<p>Tu veux modifier le gossip, pour faire un gossip dans un gossip ?</p>
+      	<p>C'est parti pour le <a href="<% @id %>/edit">GOSSIPCEPTION </a> </p>
+        <p> Page des <a href="http://127.0.0.1:4567/"> POTINS </a></p>
+        	</center>
+        </section>
+	</body>
+</html>	
